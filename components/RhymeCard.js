@@ -10,8 +10,6 @@ export default class RhymeCard extends React.Component {
     
     constructor(props) {
         super(props);
-        // Don't call this.setState() here!
-        this.state = { counter: 0 };
     }
       
     render() {

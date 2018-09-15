@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import RhymeCard from './components/RhymeCard.js';
+import Dictphone from './components/Dictphone.js';
 import randomWords from 'random-words';
 
 export default class App extends React.Component {
@@ -17,6 +18,9 @@ export default class App extends React.Component {
     render() {
         return (
             <View style={styles.container}>
+            {/* <Dictphone handleClick = {() => {
+
+            }}/> */}
             <RhymeCard word = {this.state.rhymes[0]}/>
             <RhymeCard word = {this.state.rhymes[1]}/>
             <RhymeCard word = {this.state.rhymes[2]}/>
