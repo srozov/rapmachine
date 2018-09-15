@@ -8,6 +8,7 @@ import {
 } from 'react-native';
 import CardFlip from 'react-native-card-flip';
 import Chance from 'chance';
+var randomWords = require('random-words');
 
 
 export default class App extends React.Component {
@@ -32,7 +33,7 @@ export default class App extends React.Component {
                         <Text style={styles.label}>?</Text>
                     </TouchableOpacity>
                     <TouchableOpacity activeOpacity={1} style={[styles.card, styles.card2]} onPress={() => this.card.flip()} >
-                        <Text style={styles.label}>{new Chance().word()}</Text>
+                        <Text style={styles.label}>{randomWords()}</Text>
                     </TouchableOpacity>
                 </CardFlip>
                 <CardFlip style={styles.cardContainer} ref={(card2) => this.card2 = card2} >
@@ -40,7 +41,7 @@ export default class App extends React.Component {
                         <Text style={styles.label}>?</Text>
                     </TouchableOpacity>
                     <TouchableOpacity activeOpacity={1} style={[styles.card, styles.card2]} onPress={() => this.card2.flip()} >
-                        <Text style={styles.label}>{new Chance().word()}</Text>
+                        <Text style={styles.label}>{randomWords()}</Text>
                     </TouchableOpacity>
                 </CardFlip>
             </View>
