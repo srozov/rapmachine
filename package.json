@@ -19,6 +19,7 @@
     "preset": "jest-expo"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "chance": "^1.0.16",
     "expo": "^27.0.1",
     "random-words": "^1.1.0",
